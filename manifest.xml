@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <remote  name="ghub"
-           fetch="https://github.com/" />
-
-  <remote  name="glab"
-           fetch="https://gitlab.com/" />
-
-  <remote  name="alpha-devices"
-           fetch="https://github.com/alphadroid-devices"
-           revision="refs/heads/alpha-14" />
   
-  <!-- Redmi Note 10 -->
-  <project path="device/xiaomi/sunny" remote="alpha-devices" name="device_xiaomi_sunny" />
-  <project path="vendor/xiaomi/sunny" remote="alpha-devices" name="vendor_xiaomi_sunny" />
-  <project path="kernel/xiaomi/sunny" remote="ghub" name="Neternels/android_kernel_xiaomi_sunny" revision="staging" />
-  <!-- Redmi Note 8 -->
-  <project path="device/xiaomi/ginkgo" remote="alpha-devices" name="device_xiaomi_ginkgo" />
-  <project path="vendor/xiaomi/ginkgo" remote="alpha-devices" name="vendor_xiaomi_ginkgo" />
-  <project path="kernel/xiaomi/ginkgo" remote="alpha-devices" name="kernel_xiaomi_ginkgo" />
-  <project path="vendor/miuicamera" remote="ghub" name="ArrowOS-Devices/android_vendor_miuicamera" revision="arrow-12.0-a3" />
-  <!-- GCC -->
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" remote="ghub" name="StatiXOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" revision="12.0.0" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi" remote="ghub" name="StatiXOS/android_prebuilts_gcc_linux-x86_arm_arm-eabi" revision="12.0.0" />
-  <!-- QCOM -->
-  <project path="device/qcom/common" remote="ghub" name="yaap/device_qcom_common" revision="fourteen" />
-  <project path="vendor/qcom/common" remote="glab" name="YAOSP/vendor_qcom_common" revision="fourteen" />
-  <project path="device/qcom/qssi" remote="ghub" name="AOSPA/android_device_qcom_qssi" revision="uvite" />
-  <project path="vendor/qcom/opensource/core-utils" remote="ghub" name="yaap/vendor_qcom_opensource_core-utils" revision="fourteen" />
-  <!-- KProfiles -->
-  <project path="packages/apps/KProfiles" remote="ghub" name="yaap/packages_apps_KProfiles" revision="fourteen" />
-  <!-- DisplayFeartures -->
-  <project path="packages/apps/DisplayFeatures" remote="ghub" name="cyberknight777/android_packages_apps_DisplayFeatures" revision="master" />
-  <!-- Viper4A -->
-  <project path="packages/apps/ViPER4AndroidFX" remote="ghub" name="TogoFire/packages_apps_ViPER4AndroidFX" revision="v4a" />
+  <remote name="mn"
+          fetch="https://github.com/mnasibzade" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com/" />
+
+  <remote name="github"
+          fetch="https://github.com/" />
+
+
+  <!-- Device Tree & Vendor Tree -->
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="mn" revision="staging/lineage-22.1" />
+  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="mn" revision="staging/lineage-22.1" />
+
+  <!-- Replace Hals Display for fix GCAM-->
+  <remove-project name="LineageOS/android_hardware_qcom_display"/>
+  <project path="hardware/qcom-caf/sm8150/display" name="ClownUI/hardware_qcom_display" groups="qcom" revision="vic-caf-sm8150" remote="github"/>
+
+  <!-- Kernel & Clang -->
+  <project path="kernel/xiaomi/ginkgo" name="kutemeikito/android_kernel_xiaomi_ginkgo" remote="github" revision="fourteen/main" />
+  <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="kutemeikito/RastaMod69-Clang" remote="gitlab" revision="clang-20.0" />
 </manifest>
