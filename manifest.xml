@@ -12,8 +12,8 @@
 
 
   <!-- Device Tree & Vendor Tree -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="mn" revision="staging/lineage-22.1" />
-  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="mn" revision="staging/lineage-22.1" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="mn" revision="lineage-22.1" />
+  <project path="vendor/xiaomi/ginkgo" name="kutemeikito/vendor_xiaomi_ginkgo" remote="github" revision="udc" />
 
   <!-- Replace Hals Display for fix GCAM-->
   <remove-project name="LineageOS/android_hardware_qcom_display"/>
