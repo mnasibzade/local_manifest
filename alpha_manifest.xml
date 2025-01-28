@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <remote name="alpha-devices"
+  <remote name="alpha-device"
           fetch="https://github.com/AlphaDroid-devices" />
 
   <remote name="gl"
@@ -12,7 +12,7 @@
 
 
   <!-- Device Tree & Vendor Tree -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="alpha-devices" revision="alpha-15.1" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="alpha-device" revision="alpha-15.1" />
   <project path="vendor/xiaomi/ginkgo" name="kutemeikito/vendor_xiaomi_ginkgo" remote="gh" revision="vic" />
 
   <!-- Kernel & Clang -->
