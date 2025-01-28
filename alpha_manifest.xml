@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <remote name="alpha"
+  <remote name="alpha-devices"
           fetch="https://github.com/AlphaDroid-devices" />
 
   <remote name="gl"
@@ -12,16 +12,8 @@
 
 
   <!-- Device Tree & Vendor Tree -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="alpha" revision="alpha-15.1" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="alpha-devices" revision="alpha-15.1" />
   <project path="vendor/xiaomi/ginkgo" name="kutemeikito/vendor_xiaomi_ginkgo" remote="gh" revision="vic" />
-
-  <!-- Replace Hals Display for fix GCAM-->
-  <remove-project name="LineageOS/android_hardware_qcom_display"/>
-  <project path="hardware/qcom-caf/sm8150/display" name="ClownUI/hardware_qcom_display" groups="qcom" revision="vic-caf-sm8150" remote="gh"/>
-
-  <!-- Replace vendor/lineage with perosonal fork-->
-  <remove-project name="LineageOS/android_vendor_lineage"/>
-  <project path="vendor/lineage" name="android_vendor_lineage" revision="lineage-22.1" remote="mn"/>
 
   <!-- Kernel & Clang -->
   <project path="kernel/xiaomi/ginkgo" name="kutemeikito/android_kernel_xiaomi_ginkgo" remote="gh" revision="fourteen/main" />
