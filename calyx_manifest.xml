@@ -13,6 +13,9 @@
   <!-- Device Tree & Vendor Tree -->
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="mn" revision="android-15-qpr1" />
   <project path="vendor/xiaomi/ginkgo" name="ZorEl212/proprietary_vendor_xiaomi_ginkgo" remote="github" revision="15.0-staging" />
+  
+  <!-- Clocks -->
+  <project path="vendor/clocks" name="alonsoj636MW/vendor_clocks" remote="gl" revision="15" />
 
   <!-- Kernel & Clang -->
   <project path="kernel/xiaomi/ginkgo" name="kernel_xiaomi_ginkgo" remote="mn" revision="fourteen/dynamic" />
