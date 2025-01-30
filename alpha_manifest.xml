@@ -13,7 +13,7 @@
 
   <!-- Device Tree & Vendor Tree -->
   <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="alpha-device" revision="alpha-15.1" />
-  <project path="vendor/xiaomi/ginkgo" name="kutemeikito/vendor_xiaomi_ginkgo" remote="gh" revision="vic" />
+  <project path="vendor/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="alpha-device" revision="alpha-15.1" />
 
   <!-- Kernel & Clang -->
   <project path="kernel/xiaomi/ginkgo" name="kutemeikito/android_kernel_xiaomi_ginkgo" remote="gh" revision="fourteen/main" />
