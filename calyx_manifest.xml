@@ -15,6 +15,6 @@
   <project path="vendor/xiaomi/ginkgo" name="ZorEl212/proprietary_vendor_xiaomi_ginkgo" remote="github" revision="15.0-staging" />
 
   <!-- Kernel & Clang -->
-  <project path="kernel/xiaomi/ginkgo" name="kutemeikito/android_kernel_xiaomi_ginkgo" remote="gh" revision="fourteen/main" />
+  <project path="kernel/xiaomi/ginkgo" name="kernel_xiaomi_ginkgo" remote="mn" revision="fourteen/dynamic" />
   <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="kutemeikito/RastaMod69-Clang" remote="gl" revision="clang-20.0" />
 </manifest>
